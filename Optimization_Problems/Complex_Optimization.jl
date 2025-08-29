@@ -33,7 +33,7 @@ function benchmark_jump(runs::Int=10)
     return times
 end
 
-runs = 10
+runs = 100
 times = benchmark_jump(runs)
 println("JuMP benchmark over $runs runs:")
 println("  Avg: ", mean(times), " s")

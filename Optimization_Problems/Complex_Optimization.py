@@ -44,7 +44,7 @@ def benchmark_pyomo(runs=10):
     return times
 
 if __name__ == "__main__":
-    runs = 10
+    runs = 100
     times = benchmark_pyomo(runs)
     print(f"Pyomo benchmark over {runs} runs:")
     print(f"  Avg: {statistics.mean(times):.4f} s")
